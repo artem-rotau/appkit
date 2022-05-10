@@ -1,0 +1,146 @@
+.heading
+    
+    .heading__container
+        position: relative
+        height: 560px
+
+        .img__imac
+            position: absolute
+            bottom: 0
+            right: 15px
+            z-index: 100
+
+        .round__buttons
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 30px
+            z-index: 110
+
+            .round__btn
+                width: 10px
+                height: 12px
+                margin: 0 2px
+                border-radius: 50%
+                border: none
+                background-color: rgba(255, 255, 255, 0.4)
+                cursor: pointer
+
+            .active
+                background-color: #40babd
+
+    .heading__background
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 560px
+        opacity: 0
+        transition: .8s
+
+        .heading__inner
+            width: 500px
+            
+            .heading__title
+                margin: 0
+                margin-bottom: 15px
+                padding-top: 120px
+                font-size: 30px
+                color: #fff
+
+            .heading__descr
+                font-size: 18px
+                margin-bottom: 15px
+                line-height: 1.5
+                color: #fff
+
+
+    .bg__one
+        // opacity: 0
+        background: url("../img/hero-1.jpg") center/cover no-repeat
+    .bg__two
+        // opacity: 0
+        background: url("../img/hero-2.jpg") center/cover no-repeat
+    .bg__three
+        // opacity: 0
+        background: url("../img/hero-3.jpg") center/cover no-repeat
+
+    .active_bg
+        opacity: 1
+        transition: .8s
+
+
+
+// Media
+@media (max-width: 1200px)
+    .heading
+
+        .heading__container
+
+            .img__imac
+                bottom: 105px
+                max-width: 420px
+
+@media (max-width: 990px)
+
+    .heading
+
+        .heading__container
+
+            .img__imac
+                max-width: 400px
+
+        .heading__background
+
+            .heading__inner
+                width: 300px
+
+@media (max-width: 767px)
+
+    .heading
+
+        .heading__container
+            height: 680px
+
+            .img__imac
+                bottom: 0
+                left: 15px
+                max-width: 320px
+
+            .round__buttons
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                bottom: 5px
+                z-index: 110
+
+        .heading__background
+            height: 680px
+
+            .heading__inner
+                position: relative
+                width: 100%
+
+@media (max-width: 455px)
+    .heading
+
+        .heading__container
+            height: 720px
+
+        .heading__background
+            height: 720px
+
+
+@media (max-width: 330px)
+    
+    .heading
+
+        .heading__container
+
+            .img__imac
+                width: 280px
+            
+            .round__buttons
+
+                .round__btn
+                    box-shadow: 2px 2px 4px 2px rgba(0,0,0, .3)      

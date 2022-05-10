@@ -1,0 +1,110 @@
+.pricing
+    padding: 90px 0
+
+    .pricing__inner
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+
+        .pricing__block
+            width: 300px
+            // width: 100%
+            padding: 0 15px
+            margin-bottom: 30px
+
+            .pricing__block__inner
+                text-align: center
+                padding: 30px
+                border-radius: 8px
+
+                .pricing__block__title
+                    color: #fff
+                    font-size: 18px
+                    margin: 0
+                    height: 60px
+
+                .pricing__price
+                    position: relative
+                    margin-bottom: 15px
+
+                    .pricing__dollar
+                        font-size: 26px
+                        color: rgba(255,255,255, .6)
+
+                    .pricing__number
+                        font-size: 46px
+                        color: #fff
+
+                .pricing__descr
+                    font-size: 14px
+                    margin-bottom: 15px
+                    color: #fff
+
+                .pricing__link
+                    display: block
+                    text-decoration: none
+                    font-size: 14px
+                    color: rgba(0,0,0, .4)
+                    margin-bottom: 80px
+
+                    &:hover
+                        text-decoration: underline
+
+                .pricing__btn
+                    height: 46px
+                    padding: 10px 30px
+                    border: none
+                    border-radius: 4px
+                    background-color: rgba(0,0,0, .2)
+                    color: #fff
+                    font-size: 16px
+                    font-weight: 700
+                    cursor: pointer
+                    transition: .6s
+
+                    &:hover
+                        background-color: rgba(0,0,0, .4)
+                        transition: .7s
+
+            ._lightgreen
+                background-color: #75c181
+
+            ._lightblue
+                background-color: #58bbee
+
+            ._orange
+                background-color: #f8a13f
+
+
+// Media
+@media (max-width: 991px)
+    .pricing
+        
+        .pricing__inner
+
+            .pricing__block
+                width: 240px
+
+                .pricing__block__inner
+
+                ._orange
+
+                    .pricing__link
+                        margin-bottom: 42px
+                        
+
+
+@media (max-width: 767px)
+    .pricing
+        
+        .pricing__inner
+            display: flex
+            flex-direction: column
+
+            .pricing__block
+                width: 100%
+
+                .pricing__block__inner
+
+                    .pricing__link
+                        margin-bottom: 30px

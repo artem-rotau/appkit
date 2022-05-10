@@ -1,0 +1,61 @@
+.customers
+    padding: 90px 0
+    background: #40babd url("../img/map.png") center/cover no-repeat
+
+    .customer
+        display: flex
+        justify-content: space-between
+        max-width: 800px
+        margin: 0 auto
+        padding: 30px
+
+        .customer__photo
+            width: 80px
+            height: 80px
+
+        .customer__comment
+            position: relative
+            padding: 30px
+            background-color: rgba(0,0,0, .2)
+            font-size: 14px
+            border-radius: 4px
+
+            // Треугольник
+            .customer__cube
+                position: absolute
+                content: ""
+                border-top: 10px solid transparent
+                border-bottom: 10px solid transparent
+                border-right: 10px solid rgba(0,0,0, .2)
+
+            .cube__left
+                top: 30px
+                left: -10px
+
+            .cube__right
+                top: 30px
+                right: -10px
+                transform: rotateZ(180deg)
+
+            .customer__descr
+                line-height: 1.5
+                color: #fff
+                margin-bottom: 15px
+
+            .customer__signature
+                color: rgba(0,0,0, .6)
+
+        .comment__right
+            margin-left: 30px
+
+        .comment__left
+            margin-right: 30px
+
+
+@media (max-width: 767px)
+    .customers
+
+        .customer
+            padding: 30px 15px
+            .customer__comment
+                padding: 10px
